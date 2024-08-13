@@ -96,18 +96,18 @@
           </figure>
           <div class="card-body">
             <h2 class="card-title">Rhombus</h2>
-            <p class="text-center">Area (A) = 0.5 X base X height</p>
+            <p class="text-center">Area (A) = 0.5 X q1 X q2</p>
 
             <!-- Input field -->
             <div class="flex">
-              <input id="triangle-base" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="base">
+              <input id="rhombus-q1" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="q1">
               <p>cm</p>
-              <input id="triangle-height" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="height">
+              <input id="rhombus-q2" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="q2">
               <p>cm</p>
             </div>
 
             <div class="card-actions">
-              <button onclick="triangleAreaCalculate()" class="btn btn-primary text-white w-full">Calculate</button>
+              <button onclick="rhombusAreaCalculate()" class="btn btn-primary text-white w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -119,19 +119,19 @@
               alt="Triangle" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Triangle</h2>
-            <p class="text-center">Area (A) = 0.5 X base X height</p>
+            <h2 class="card-title">Pentagon</h2>
+            <p class="text-center">Area (A) = 0.5 X a X b</p>
 
             <!-- Input field -->
             <div class="flex">
-              <input id="triangle-base" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="base">
+              <input id="pentagon-a" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="a">
               <p>cm</p>
-              <input id="triangle-height" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="height">
+              <input id="pentagon-b" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="b">
               <p>cm</p>
             </div>
 
             <div class="card-actions">
-              <button onclick="triangleAreaCalculate()" class="btn btn-primary text-white w-full">Calculate</button>
+              <button onclick="pentagonAreaCalculate()" class="btn btn-primary text-white w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -164,6 +164,7 @@
        <!-- Result div -->
         <div>
           <h3 class="text-xl font-bold">Area Calculation</h3>
+          <p>Result is: <span id="result">--</span><span> cm</span></p>
         </div>
     </div>
   </main>
@@ -173,5 +174,7 @@
     <script src="triangle.js"></script>
     <script src="rectangle.js"></script>
     <script src="parallelogram.js"></script>
+    <script src="rhombus.js"></script>
+    <script src="pentagon.js"></script>
 </body>
 </html>
