@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Doctor</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-14">
+  <header>
+
+  </header>
+  <main>
+    <div class="flex">
+      <!-- Card div -->
+       <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Triangle Card -->
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img
+              src="images/triangle.png"
+              alt="Triangle" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Triangle</h2>
+            <p class="text-center">Area (A) = 0.5 X base X height</p>
+
+            <!-- Input field -->
+            <div class="flex">
+              <input id="triangle-base" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="base">
+              <p>cm</p>
+              <input id="triangle-height" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="height">
+              <p>cm</p>
+            </div>
+
+            <div class="card-actions">
+              <button onclick="triangleAreaCalculate()" class="btn btn-primary text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Rectangle Card -->
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img
+              src="images/rectangle.png"
+              alt="Triangle" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Rectangle</h2>
+            <p class="text-center">Area (A) = width X length</p>
+
+            <!-- Input field -->
+            <div class="flex">
+              <input id="rectangle-width" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="width">
+              <p>cm</p>
+              <input id="rectangle-length" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="length">
+              <p>cm</p>
+            </div>
+
+            <div class="card-actions">
+              <button onclick="rectangleAreaCalculation()" class="btn btn-primary text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Parallelogram Card -->
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img
+              src="images/parallelogram.png"
+              alt="" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Parallelogram</h2>
+            <p class="text-center">Area (A) = base X height</p>
+
+            <!-- Input field -->
+            <div class="flex">
+              <input id="parallelogram-base" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="base">
+              <p>cm</p>
+              <input id="parallelogram-height" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="height">
+              <p>cm</p>
+            </div>
+
+            <div class="card-actions">
+              <button onclick="parallelogramAreaCalculate()" class="btn btn-primary text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Rhombus Card -->
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img
+              src="images/rhombus.png"
+              alt="" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Rhombus</h2>
+            <p class="text-center">Area (A) = 0.5 X base X height</p>
+
+            <!-- Input field -->
+            <div class="flex">
+              <input id="triangle-base" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="base">
+              <p>cm</p>
+              <input id="triangle-height" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="height">
+              <p>cm</p>
+            </div>
+
+            <div class="card-actions">
+              <button onclick="triangleAreaCalculate()" class="btn btn-primary text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Pentagon Card -->
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img
+              src="images/pentagon.png"
+              alt="Triangle" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Triangle</h2>
+            <p class="text-center">Area (A) = 0.5 X base X height</p>
+
+            <!-- Input field -->
+            <div class="flex">
+              <input id="triangle-base" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="base">
+              <p>cm</p>
+              <input id="triangle-height" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="height">
+              <p>cm</p>
+            </div>
+
+            <div class="card-actions">
+              <button onclick="triangleAreaCalculate()" class="btn btn-primary text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Ellipse  Card -->
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img
+              src="images/ellipse.png"
+              alt="Triangle" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Ellipse</h2>
+            <p class="text-center">Area (A) = 0.5 X base X height</p>
+
+            <!-- Input field -->
+            <div class="flex">
+              <input id="triangle-base" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="base">
+              <p>cm</p>
+              <input id="triangle-height" class="bg-[#F1F1F1] rounded w-24 h-8 placeholder: pl-3" type="text" placeholder="height">
+              <p>cm</p>
+            </div>
+
+            <div class="card-actions">
+              <button onclick="triangleAreaCalculate()" class="btn btn-primary text-white w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+
+       </div>
+       <!-- Result div -->
+        <div>
+          <h3 class="text-xl font-bold">Area Calculation</h3>
+        </div>
+    </div>
+  </main>
+
+
+  <!-- JavaScript files -->
+    <script src="triangle.js"></script>
+    <script src="rectangle.js"></script>
+    <script src="parallelogram.js"></script>
+</body>
+</html>
